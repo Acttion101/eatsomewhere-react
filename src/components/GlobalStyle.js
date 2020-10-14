@@ -10,10 +10,6 @@ const GlobalStyle = createGlobalStyle`
    width:100vw;
    font-size:20px;
  }
- *{
-   padding:0;
-   margin:0;
- }
  
 `
 export default GlobalStyle
