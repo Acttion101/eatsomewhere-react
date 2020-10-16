@@ -1,13 +1,16 @@
 import React from 'react'
-
+import {
+  ContainerHome,
+  ContentImage,
+  ContentHome,
+} from './styled'
+// import backgroundImage from '../assets/Promotion.jpg'
 function Content() {
   return (
-    <div className="content-container">
-      <div>img</div>
-      <div className="content-input">
-        <input></input>
-      </div>
-    </div>
+    <ContainerHome>
+      <ContentImage >img</ContentImage>
+      <ContentHome></ContentHome>
+    </ContainerHome>
   )
 }
 
