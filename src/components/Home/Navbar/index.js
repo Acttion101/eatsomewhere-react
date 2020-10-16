@@ -1,17 +1,34 @@
 import React from 'react'
-
+import {
+  NavBarContainer,
+  ActionContainer,
+  Action,
+  NavButtonLogin
+} from './styled'
+import {
+  Text,
+  Logo
+} from '/Users/ramita/eatsomewhere-react/src/components/Typography'
+import { Link } from 'react-router-dom'
 function Navbar() {
   return (
-    <div className="navbar-container">
-      <div className="logo">Logo</div>
-      <div className="navbar-input">
-        <span>username : </span>
-        <input></input>
-        <span>password : </span>
-        <input></input>
-        <button>Login</button>
-      </div>
-    </div>
+    <NavBarContainer>
+      <Logo>
+        <Link to="/home">Logo</Link>
+        <Text>WHERE TO EAT</Text>
+      </Logo>
+      <ActionContainer>
+        <Action>
+          <Link to="/news">ข่าวสาร</Link>
+        </Action>
+        <Action>
+          <Link to="/community">ชุมชน</Link>
+        </Action>
+        <NavButtonLogin>
+          <Link to="/login">เข้าสู่ระบบ</Link>
+        </NavButtonLogin>
+      </ActionContainer>
+    </NavBarContainer>
   )
 }
 
