@@ -1,10 +1,21 @@
 import styled from 'styled-components'
 
  export const Text = styled.h1`
-  width: 70%;
+  width: 100%;
   display: flex;
-  align-items: flex-start;
+  /* justify-content:center; */
+  /* align-items: center; */
   padding:1rem;
+  color:#FFFFFF;
+  font-size:3rem;
+ 
+
+  /* margin:0rem 0rem 0rem 4rem; */
  `
 export const Logo = styled.div`
-padding: 1rem;`
+padding: 1rem;
+display:flex;
+flex-direction:row;
+align-items: center;
+/* margin:0rem 4rem 0rem 0rem; */
+`
