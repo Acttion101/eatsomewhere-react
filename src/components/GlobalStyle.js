@@ -10,6 +10,12 @@ const GlobalStyle = createGlobalStyle`
    width:100vw;
    font-size:20px;
  }
- 
+ a{
+   text-decoration:none;
+   color:inherit;
+   &visited{
+     color:inherit;
+   }
+ }
 `
 export default GlobalStyle
