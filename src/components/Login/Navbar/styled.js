@@ -7,7 +7,7 @@ export const NavContainerLogin = styled.div`
   justify-content: space-between;
   padding: 10px;
   height: 60px;
-  box-shadow: 0px 5px #00000025;
+  box-shadow: 0px 4px rgb(65, 65, 65);
 `
 
 export const NavButtonLogin = styled.button`
