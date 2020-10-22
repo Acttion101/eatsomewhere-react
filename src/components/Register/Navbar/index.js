@@ -3,7 +3,7 @@ import { NavContainerRegister, NavButtonRegister } from './styled'
 import {
   Text,
   Logo
-} from '/Users/ramita/eatsomewhere-react/src/components/Typography'
+} from '../../Typography'
 import { Link } from 'react-router-dom'
 
 function Navbar() {

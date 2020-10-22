@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import {
   Text,
   Logo
-} from '../../Typography'
+} from '/Users/ramita/eatsomewhere-react/src/components/Typography'
 
 function Navbar() {
   return (
