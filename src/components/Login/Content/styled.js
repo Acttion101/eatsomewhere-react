@@ -18,11 +18,7 @@ export const FormLogin = styled.form`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  border: solid #707070 2px;
-  border-radius: 1rem;
-  padding: 4rem 2rem;
-  background-color: #fff;
-  box-shadow: 6px 6px rgb(65, 65, 65);
+ 
 `
 
 export const InputLogin = styled.input`
@@ -39,7 +35,7 @@ export const ButtonLogin = styled.button`
   width: 45%;
   font-size: 1rem;
   padding: 1rem;
-  border: solid #707070 1px;
+  border: none;
   background-color: #ffffff;
   border-radius: 3rem;
   margin: 0rem 3rem;
