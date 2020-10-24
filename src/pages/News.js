@@ -1,13 +1,13 @@
 import React from 'react'
-import Navbar from "../components/Login/Navbar"
-// import Content from "../components/Login/Content"
+import Navbar from "../components/News/Navbar"
+import Content from "../components/News/Content"
 
 function News() {
   return (
-    <div>
+    <div className='login-container'>
       <Navbar />
-      
+      <Content />
     </div>
-  )
+  );
 }
 export default News
