@@ -7,7 +7,7 @@ export const NavBarContainer = styled.div`
   justify-content: space-between;
   padding: 10px;
   height: 60px;
-  box-shadow: 0px 10px #888888;
+  box-shadow: 0px 4px 7px 3px rgba(0, 0, 0, 0.301);
  
 `
 

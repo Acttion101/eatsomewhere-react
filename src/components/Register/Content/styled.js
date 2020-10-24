@@ -34,7 +34,7 @@ export const InputRegister = styled.input`
   border: solid #707070 1px;
   background-color: #ffffff;
   border-radius: 3rem;
-  box-shadow: 0px 5px #f37305;
+  box-shadow: 5px 6px 8px 4px #f37305;
   font-size: 1rem;
   margin: 0rem 1rem 2rem 0rem;
 `
@@ -47,7 +47,7 @@ export const ButtonRegister = styled.button`
   border-radius: 3rem;
   margin: 0rem 3rem;
   cursor: pointer;
-  box-shadow: 0px 5px #00000035;
+  box-shadow: 0px 4px 7px 3px rgba(0, 0, 0, 0.301);
   &:active {
     background-color: #f37305;
     box-shadow: 0 5px #00000063;
