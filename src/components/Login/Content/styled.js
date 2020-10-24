@@ -6,7 +6,7 @@ export const ContainerLogin = styled.div`
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #bf7f4bc9;
+  background-color: #bf804b;
 `
 export const ContentLogin = styled.div`
   flex: 1;

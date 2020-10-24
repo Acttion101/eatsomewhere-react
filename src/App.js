@@ -1,14 +1,10 @@
 import React, { Suspense, lazy } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import routes from './config/routes'
 import { Footer } from './components/Footer/styled'
 import GlobalStyle from './components/GlobalStyle'
 import { TextFooter } from '../src/components/Typography'
 
-const Login = lazy(() => import('./pages/Login'))
-const Home = lazy(() => import('./pages/Home'))
-const Register = lazy(() => import('./pages/Register'))
-const News = lazy(() => import('./pages/News'))
-// const Community = lazy(() => import('./pages/Community'))
 
 function App() {
   return (
@@ -17,13 +13,9 @@ function App() {
       <Router>
         <Suspense fallback="...Loading">
           <Switch>
-            <Route path="/login" exact component={Login} />
-            <Route path="/home" exact component={Home} />
-            <Route path="/register" exact component={Register} />
-            <Route path="/news" exact component={News} />
-            {/* <Route path="/community" exact component={Community} /> */} 
-            <Footer />
-            <TextFooter />
+          {Object.keys(routes).map(routeKey => (
+              <Route key={routeKey} {...routes[routeKey]} />
+            ))}
           </Switch>
         </Suspense>
       </Router>

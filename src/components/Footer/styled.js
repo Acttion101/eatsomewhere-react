@@ -7,7 +7,7 @@ export const Footer = styled.footer`
   justify-content: space-between;
   padding: 10px;
   height: 60px;
-  box-shadow: 0px 10px #888888;
+
  
 `
 
