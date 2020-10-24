@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import routes from './config/routes'
 import { Footer } from './components/Footer/styled'
 import GlobalStyle from './components/GlobalStyle'
-import { TextFooter } from '/Users/ramita/eatsomewhere-react/src/components/Typography'
-
+import { TextFooter } from '../src/components/Typography'
 
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
               <Route key={routeKey} {...routes[routeKey]} />
             ))}
           </Switch>
-          <Footer ><TextFooter>Copy right by where to eat</TextFooter></Footer>
         </Suspense>
       </Router>
     </>

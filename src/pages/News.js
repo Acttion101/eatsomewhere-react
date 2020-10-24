@@ -1,13 +1,22 @@
 import React from 'react'
-import Navbar from "../components/Login/Navbar"
-// import Content from "../components/Login/Content"
+import styled from 'styled-components'
+import Navbar from "../components/News/Navbar"
+import Content from "../components/News/Content"
+
+const LoginContainer = styled.div`
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  background-color: #bf7f4bc9;
+`
 
 function News() {
   return (
-    <div>
+    <LoginContainer>
       <Navbar />
-      
-    </div>
-  )
+      <Content />
+    </LoginContainer>
+  );
 }
 export default News
