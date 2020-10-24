@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react'
+import React, { Suspense} from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import routes from './config/routes'
 import { Footer } from './components/Footer/styled'
@@ -17,6 +17,7 @@ function App() {
               <Route key={routeKey} {...routes[routeKey]} />
             ))}
           </Switch>
+          <Footer><TextFooter>Copy right by where to eat</TextFooter></Footer>
         </Suspense>
       </Router>
     </>
