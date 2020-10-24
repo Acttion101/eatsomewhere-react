@@ -6,7 +6,7 @@ import GlobalStyle from './components/GlobalStyle'
 const Login = lazy(() => import('./pages/Login'))
 const Home = lazy(() => import('./pages/Home'))
 const Register = lazy(() => import('./pages/Register'))
-// const News = lazy(() => import('./pages/News'))
+const News = lazy(() => import('./pages/News'))
 // const Community = lazy(() => import('./pages/Community'))
 
 function App() {
@@ -19,8 +19,8 @@ function App() {
           <Route path="/login" exact component={Login} />
           <Route path="/home" exact component={Home} />
           <Route path="/register" exact component={Register} />
-          {/* <Route path="/news" exact component={News} />
-          <Route path="/community" exact component={Community} /> */}
+           <Route path="/news" exact component={News} />
+          {/* <Route path="/community" exact component={Community} /> */} */}
         </Switch>
       </Suspense>
     </Router>
