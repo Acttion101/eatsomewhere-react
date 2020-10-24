@@ -1,9 +1,22 @@
 import React from 'react'
+import { BackContent, Container,Card } from './styled'
 
-export default function index() {
+function index() {
   return (
-    <div>
+    <BackContent>
+      <h1>ข่าวสารและกิจกรรม</h1>
+      <Card>
       
-    </div>
+      <Container>
+        <h4>
+          <b>John Doe</b>
+        </h4>
+        <p>Architect & Engineer</p>
+
+       </Container>  
+      </Card>
+     
+    </BackContent>
   )
 }
+export default index
