@@ -1,53 +1,22 @@
 import styled from 'styled-components'
 
-export const ContainerLogin = styled.div`
+export const BackContent = styled.div`
   display: flex;
+  margin: 50px 0 0 50px;
+  padding: 10px;
+  border-radius: 2rem;
   justify-content: center;
-  align-items: center;
+  align-items: top;
   height: 100vh;
-  width: 100vw;
-  background-color: #bf7f4bc9;
+  width: 70vw;
+  background-color: #ffffff;
 `
-export const ContentLogin = styled.div`
-  flex: 1;
-  display: flex;
-  justify-content: center;
+export const Container = styled.div`
+  padding: 2px 16px;
+  
 `
-export const FormLogin = styled.form`
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  border: solid #707070 2px;
-  border-radius: 1rem;
-  padding: 4rem 2rem;
-  background-color: #fff;
-  box-shadow: 6px 6px rgb(65, 65, 65);
-`
+export const Card = styled.div`
 
-export const InputLogin = styled.input`
-  width: 55%;
-  padding: 1rem 5rem 1rem 1rem;
-  border: solid #707070 1px;
-  background-color: #ffffff;
-  border-radius: 3rem;
-  box-shadow: 0px 5px #ff7700;
-  font-size: 1rem;
-  margin: 0rem 1rem 2rem 0rem;
-`
-export const ButtonLogin = styled.button`
-  width: 45%;
-  font-size: 1rem;
-  padding: 1rem;
-  border: solid #707070 1px;
-  background-color: #ffffff;
-  border-radius: 3rem;
-  margin: 0rem 3rem;
-  cursor: pointer;
-  box-shadow: 0px 5px #00000025;
-  &:active {
-    background-color: #f37305;
-    box-shadow: 0 5px #00000063;
-    transform: translateY(4px);
-  }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
 `
