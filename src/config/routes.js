@@ -21,6 +21,10 @@ export default {
   News: {
     path: '/news',
     component: lazy(() => import('../pages/News'))
+  },
+  post:{
+    path: '/post',
+    component: lazy(() => import('../pages/post'))
   }
   // Community: {
   //   path: '/community',
