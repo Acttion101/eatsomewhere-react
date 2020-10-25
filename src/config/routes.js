@@ -25,12 +25,13 @@ export default {
     path: '/post',
     component: lazy(() => import('../pages/post'))
   },
-  // Community: {
-  //   path: '/community',
-  //   component: lazy(() => import('./pages/Community'))
-  // }
   Detail: {
     path: '/detail',
     component: lazy(() => import('../pages/Detail'))
+  },
+  Community: {
+    path: '/community',
+    component: lazy(() => import('../pages/Community'))
   }
+
 }
