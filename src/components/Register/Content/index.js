@@ -5,10 +5,10 @@ import {
   FormRegister,
   InputRegister,
   ButtonRegister,
-  ContentInputAgeDate,
+  ContentInputAgeDate
 } from './styled'
 
-function Content() {
+function Content () {
   const [value, setValue] = useState('')
   const [password, setPassword] = useState('')
   const [inputName, setName] = useState('')
@@ -27,37 +27,43 @@ function Content() {
       <ContentRegister>
         <FormRegister>
           <InputRegister
-            type="text"
+            type='text'
             value={inputName}
-            placeholder="ชื่อจริง"
-            onChange={handleInputName}></InputRegister>
+            placeholder='ชื่อจริง'
+            onChange={handleInputName}
+          />
           <InputRegister
-            type="text"
+            type='text'
             value={inputLast}
-            placeholder="นามสกุล"
-            onChange={handleInputLast}></InputRegister>
+            placeholder='นามสกุล'
+            onChange={handleInputLast}
+          />
           <ContentInputAgeDate>
             <InputRegister
-              type="text"
+              type='text'
               value={inputAge}
-              placeholder="อายุ"
-              onChange={handleInputAge}></InputRegister>
+              placeholder='อายุ'
+              onChange={handleInputAge}
+            />
             <InputRegister
-              type="text"
+              type='text'
               value={inputDate}
-              placeholder="วัน/เดือน/ปี"
-              onChange={handleInputDate}></InputRegister>
+              placeholder='วัน/เดือน/ปี'
+              onChange={handleInputDate}
+            />
           </ContentInputAgeDate>
           <InputRegister
-            type="text"
+            type='text'
             value={value}
-            placeholder="ชื่อผู้ใช้"
-            onChange={handleInputUser}></InputRegister>
+            placeholder='ชื่อผู้ใช้'
+            onChange={handleInputUser}
+          />
           <InputRegister
-            type="password"
+            type='password'
             value={password}
-            placeholder="รหัสผ่าน"
-            onChange={handleInputPassword}></InputRegister>
+            placeholder='รหัสผ่าน'
+            onChange={handleInputPassword}
+          />
           <ButtonRegister>สมัครสมาชิก</ButtonRegister>
         </FormRegister>
       </ContentRegister>
