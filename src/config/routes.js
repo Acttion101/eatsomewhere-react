@@ -25,10 +25,10 @@ export default {
   post:{
     path: '/post',
     component: lazy(() => import('../pages/post'))
-  }
-  // Community: {
-  //   path: '/community',
-  //   component: lazy(() => import('./pages/Community'))
-  // }
+  },
+  Community: {
+   path: '/community',
+     component: lazy(() => import('../pages/Community'))
+   }
 
 }
