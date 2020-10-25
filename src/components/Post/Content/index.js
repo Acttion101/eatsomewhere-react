@@ -8,17 +8,17 @@ import styled from 'styled-components';
 const Test = styled.div`
   width: 1300px;
   height: 150px;
-  background-color: red;
+  background-color: #A25C20;
   border-radius: 20px;
   select{
     width: 300px;
     height:40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    flex-direction:column;
   }
-  display:flex;
-  width: 1300px;
-  height: 150px;
-  background-color: red;
+  h1{
+    color:white;
+  }
 `
 function Post() {
   const [value ,setValue] = useState("")
@@ -52,6 +52,7 @@ function Post() {
     <CKEditor editor={ClassicEditor}  placeholder="รายละเอียดโพส เช่น วันนี้กินร้านไหนดีแนะนำหน่อย"
     onChange={handleOnChange}
     />
+    <button type="submit">โพส</button>
     {ReactHtmlParser(value)}
     </from>
     </BackContent>
