@@ -29,6 +29,10 @@ export default {
   Community: {
    path: '/community',
      component: lazy(() => import('../pages/Community'))
+   },
+   PostView1:{
+     path:'/postview1',
+     component:lazy(() => import('../pages/PostView1'))
    }
 
 }
