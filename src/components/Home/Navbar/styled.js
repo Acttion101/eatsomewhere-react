@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 
 export const NavBarContainer = styled.div`
-  background-color: #fd6500;
+  background-color: #FF7700;
   display: flex;
   justify-content: space-between;
   padding: 10px;
