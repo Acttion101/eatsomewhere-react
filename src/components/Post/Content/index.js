@@ -6,10 +6,11 @@ import ReactHtmlParser from'react-html-parser';
 import styled from 'styled-components';
 
 const Test = styled.div`
-  width: 1300px;
+   width: 1500px;
   height: 150px;
   background-color: #A25C20;
   border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   select{
     width: 300px;
     height:40px;
