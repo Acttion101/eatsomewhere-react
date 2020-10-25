@@ -12,9 +12,14 @@ export const BackContent = styled.div`
   flex-direction: column;
   align-items: center;
   input{
-    width: 300px;
-    height:40px;
-
+    width: 600px;
+    height:50px;
+    display:flex;
+    flex-direction:column;
+    margin: 10px;
+  }
+  button{
+    
   }
 `
 export const Container = styled.div`
