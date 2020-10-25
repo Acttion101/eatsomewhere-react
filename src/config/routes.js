@@ -1,6 +1,5 @@
 import { lazy } from 'react'
 
-
 export default {
 
   Home: {
@@ -22,13 +21,16 @@ export default {
     path: '/news',
     component: lazy(() => import('../pages/News'))
   },
-  post:{
+  post: {
     path: '/post',
     component: lazy(() => import('../pages/post'))
-  }
+  },
   // Community: {
   //   path: '/community',
   //   component: lazy(() => import('./pages/Community'))
   // }
-
+  Detail: {
+    path: '/detail',
+    component: lazy(() => import('../pages/Detail'))
+  }
 }
