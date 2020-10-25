@@ -7,7 +7,7 @@ import {
   ButtonLogin
 } from './styled'
 
-function Content() {
+function Content () {
   const [value, setValue] = useState('')
   const [password, setPassword] = useState('')
   const handleInput = event => setValue(event.target.value)
@@ -18,15 +18,17 @@ function Content() {
       <ContentLogin>
         <FormLogin>
           <InputLogin
-            type="text"
+            type='text'
             value={value}
-            placeholder="ชื่อผู้ใช้"
-            onChange={handleInput}></InputLogin>
+            placeholder='ชื่อผู้ใช้'
+            onChange={handleInput}
+          />
           <InputLogin
-            type="password"
+            type='password'
             value={password}
-            placeholder="รหัสผ่าน"
-            onChange={handleInputPassword}></InputLogin>
+            placeholder='รหัสผ่าน'
+            onChange={handleInputPassword}
+          />
           <ButtonLogin>เข้าสู่ระบบ</ButtonLogin>
         </FormLogin>
       </ContentLogin>
