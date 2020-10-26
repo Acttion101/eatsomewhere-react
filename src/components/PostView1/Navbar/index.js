@@ -1,10 +1,13 @@
 import React from 'react'
-import { NavContainerLogin, NavButtonLogin, NavButtonHome, Hello, NavButtonNews } from './styled'
-import { Link } from 'react-router-dom'
 import {
-  Text,
-  Logo
-} from '../../Typography'
+  NavContainerLogin,
+  NavButtonLogin,
+  NavButtonHome,
+  Hello,
+  NavButtonNews
+} from './styled'
+import { Link } from 'react-router-dom'
+import { Text, Logo } from '../../Typography'
 
 function Navbar () {
   return (
@@ -13,10 +16,19 @@ function Navbar () {
         <Text>WHERE TO EAT</Text>
       </Logo>
       <Hello>
+        <Link to='/'>
+          <NavButtonHome> หน้าหลัก</NavButtonHome>
+        </Link>
+        <Link to='/community'>
+          <NavButtonLogin> ชุมชน </NavButtonLogin>
+        </Link>
+        <Link to='/news'>
+          <NavButtonNews> ข่าวสาร</NavButtonNews>
+        </Link>
+        <Link to='/register'>
+          <NavButtonLogin>ชื่อผู้ใช้งาน </NavButtonLogin>
+        </Link>
 
-        <Link to='/'><NavButtonHome> หน้าหลัก</NavButtonHome></Link>
-        <Link to='/news'><NavButtonNews> ข่าวสาร</NavButtonNews></Link>
-        <Link to='/register'><NavButtonLogin> ชื่อผู้ใช้ </NavButtonLogin></Link>
       </Hello>
     </NavContainerLogin>
   )

@@ -1,40 +1,36 @@
 import React from 'react'
 import {
-  NavBarContainer,
-  ActionContainer,
-  Action,
-  NavButtonLogin
+  NavContainerLogin,
+  NavButtonLogin,
+  NavButtonHome,
+  Hello,
+  NavButtonNews
 } from './styled'
-import {
-  Text,
-  Logo
-} from '../../Typography'
 import { Link } from 'react-router-dom'
+import { Text, Logo } from '../../Typography'
+
 function Navbar () {
   return (
-    <NavBarContainer>
+    <NavContainerLogin>
       <Logo>
-
-        <Link to='/'><Text>WHERE TO EAT</Text></Link>
+        <Text>WHERE TO EAT</Text>
       </Logo>
-      <ActionContainer>
-        <Link to='/news'>
-          <Action>
-            ข่าวสาร
-          </Action>
+      <Hello>
+        <Link to='/'>
+          <NavButtonHome> หน้าหลัก</NavButtonHome>
         </Link>
         <Link to='/community'>
-          <Action>
-            ชุมชน
-          </Action>
+          <NavButtonLogin> ชุมชน </NavButtonLogin>
         </Link>
-        <Link to='/login'>
-          <NavButtonLogin>
-            เข้าสู่ระบบ
-          </NavButtonLogin>
+        <Link to='/news'>
+          <NavButtonNews> ข่าวสาร</NavButtonNews>
         </Link>
-      </ActionContainer>
-    </NavBarContainer>
+        <Link to='/register'>
+          <NavButtonLogin> เข้าสู่ระบบ </NavButtonLogin>
+        </Link>
+
+      </Hello>
+    </NavContainerLogin>
   )
 }
 

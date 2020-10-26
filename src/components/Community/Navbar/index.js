@@ -19,12 +19,16 @@ function Navbar () {
         <Link to='/'>
           <NavButtonHome> หน้าหลัก</NavButtonHome>
         </Link>
+        <Link to='/community'>
+          <NavButtonLogin> ชุมชน </NavButtonLogin>
+        </Link>
         <Link to='/news'>
           <NavButtonNews> ข่าวสาร</NavButtonNews>
         </Link>
         <Link to='/register'>
-          <NavButtonLogin> ชื่อผู้ใช้ </NavButtonLogin>
+          <NavButtonLogin>ชื่อผู้ใช้งาน </NavButtonLogin>
         </Link>
+
       </Hello>
     </NavContainerLogin>
   )

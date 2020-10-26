@@ -7,7 +7,7 @@ export const NavContainerLogin = styled.div`
   padding: 10px;
   height: 60px;
   box-shadow: 0px 5px #00000025;
-  width:98.3%;
+  width:98.7%;
 `
 
 export const NavButtonLogin = styled.button`
@@ -24,6 +24,7 @@ export const NavButtonLogin = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right:1rem;
 `
 export const NavButtonHome = styled.button`
   padding: 0.5rem 1rem;
@@ -39,6 +40,7 @@ export const NavButtonHome = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right:1rem;
 `
 export const NavButtonNews = styled.button`
   padding: 0.5rem 1rem;
@@ -54,6 +56,7 @@ export const NavButtonNews = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right:1rem;
 `
 
 export const Hello = styled.div`
