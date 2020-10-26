@@ -36,5 +36,9 @@ export default {
   PostView1: {
     path: '/postview1',
     component: lazy(() => import('../pages/PostView1'))
+  },
+  PostView2: {
+    path: '/postview2',
+    component: lazy(() => import('../pages/PostView2'))
   }
 }
