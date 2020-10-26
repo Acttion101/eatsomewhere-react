@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const BackContent = styled.div`
   display: flex;
-  margin: 50px 0 0 50px;
+  margin: 50px 0 2rem 50px;
   padding: 0 10px 10px;
   border-radius: 2rem;
   align-items: top;
@@ -19,7 +19,21 @@ export const BackContent = styled.div`
     margin: 10px;
   }
   button{
-    
+    padding: 0.5rem 1rem;
+  border: #707070 solid 2px;
+  border: none;
+  background-color: #ff7700;
+  border-radius: 3rem;
+  cursor: pointer;
+  box-shadow: 0px 5px #00000025;
+  font-size: 20px;
+  position: relative;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  margin: 10px; 
   }
 `
 export const Container = styled.div`

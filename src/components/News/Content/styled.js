@@ -3,11 +3,11 @@ import Img from '../../../assets/img1.jpg'
 
 export const BackContent = styled.div`
   display: flex;
-  margin: 50px 0 0 50px;
+  margin: 50px 0 2rem 50px;
   padding: 10px;
   border-radius: 2rem;
   align-items: top;
-  height: 100vh;
+  height: 200vh;
   width: 70vw;
   background-color: #ffffff;
   flex-direction: column;
@@ -33,7 +33,7 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 height: 250px;
-width: 1056px;
+width: 1057px;
 `
 export const LineHot = styled.div`
   height: 6px;
