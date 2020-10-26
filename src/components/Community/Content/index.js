@@ -6,7 +6,7 @@ import { Footer } from '../../Footer/styled'
 import { TextFooter } from '../../Typography'
 
 const Test = styled.div`
-  width: 1500px;
+  width: 95vw;
   height: 150px;
   background-color: #a25c20;
   border-radius: 20px;
