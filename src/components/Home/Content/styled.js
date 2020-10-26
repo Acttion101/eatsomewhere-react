@@ -1,11 +1,12 @@
 import styled from 'styled-components'
+import Img from '../../../assets/Promotion.png'
 
 export const ContainerHome = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
 
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
 `
 export const ContentHome = styled.div`
@@ -107,22 +108,39 @@ export const HomePromotion = styled.div`
 export const Button = styled.button`
   order: 1;
   align-self: flex-end;
+  
+  margin:3rem;
+  height:3rem;
+  width:auto;
+  font-size:1.5rem;
+  border-radius:1rem;
+  border:solid 1px #000;
+  background-color:#ffffff;
 `
 
 export const ContentImage = styled.div`
-  padding:0rem 0rem 15rem 0rem;
+  /* padding:0rem 0rem 15rem 0rem; */
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100%;
+  justify-content: flex-end;
+  height: 50vh;
   width: 100%;
-  background-color: #000;
+
+  position: relative;
+  color: #ffffff;
+`
+
+export const Test = styled.div`
+  display: flex;
+  
+  align-items: center;
+  justify-content: flex-end;
+  background-image: url(${Img});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  position: relative;
-  color: #ffffff;
+  height: 100vh;
+  width: 100%;
 `
 // endimg
