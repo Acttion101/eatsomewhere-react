@@ -18,15 +18,21 @@ function Navbar () {
         <Link to='/'><Text>WHERE TO EAT</Text>Logo</Link>
       </Logo>
       <ActionContainer>
-        <Action>
-          <Link to='/news'>ข่าวสาร</Link>
-        </Action>
-        <Action>
-          <Link to='/community'>ชุมชน</Link>
-        </Action>
-        <NavButtonLogin>
-          <Link to='/login'>เข้าสู่ระบบ</Link>
-        </NavButtonLogin>
+        <Link to='/news'>
+          <Action>
+            ข่าวสาร
+          </Action>
+        </Link>
+        <Link to='/community'>
+          <Action>
+            ชุมชน
+          </Action>
+        </Link>
+        <Link to='/login'>
+          <NavButtonLogin>
+            เข้าสู่ระบบ
+          </NavButtonLogin>
+        </Link>
       </ActionContainer>
     </NavBarContainer>
   )

@@ -6,17 +6,18 @@ import {
   Logo
 } from '../../Typography'
 
-function Navbar() {
+function Navbar () {
   return (
     <NavContainerLogin>
       <Logo>
-        <Link to="/home">Logo</Link>
+        <Link to='/home'>Logo</Link>
         <Text>WHERE TO EAT</Text>
       </Logo>
-
-      <NavButtonLogin>
-        <Link to="/register">สมัครสมาชิก</Link>
-      </NavButtonLogin>
+      <Link to='/register'>
+        <NavButtonLogin>
+          สมัครสมาชิก
+        </NavButtonLogin>
+      </Link>
     </NavContainerLogin>
   )
 }

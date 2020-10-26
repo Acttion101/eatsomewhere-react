@@ -1,9 +1,11 @@
-import React,{ useState } from 'react'
-import { BackContent} from './styled'
-import CKEditor from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-import ReactHtmlParser from'react-html-parser';
-import styled from 'styled-components';
+import React, { useState } from 'react'
+import { BackContent } from './styled'
+import CKEditor from '@ckeditor/ckeditor5-react'
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
+import ReactHtmlParser from 'react-html-parser'
+import styled from 'styled-components'
+import { Footer } from '../../Footer/styled'
+import { TextFooter } from '../../Typography'
 
 const Test = styled.div`
    width: 1500px;
@@ -21,42 +23,46 @@ const Test = styled.div`
     color:white;
   }
 `
-function Post() {
-  const [value ,setValue] = useState("")
+function Post () {
+  const [value, setValue] = useState('')
 
-  const handleOnChange = (e,editor) =>{
-    const data =editor.getData()
+  const handleOnChange = (e, editor) => {
+    const data = editor.getData()
     setValue(data)
   }
   return (
-    <BackContent>
-    <Test><h1>ชุมชน</h1>
+    <>
+      <BackContent>
+        <Test><h1>ชุมชน</h1>
 
- <select>
-    <option value="volvo">มหาลัยเชียงใหม่</option>
-    <option value="saab">มหาลัยเเม่โจ้</option>
-    <option value="opel">มหาวิทยลัยธรรมศาสตร์</option>
-    <option value="audi">มหาลัยจุฬาลงกรณ์</option>
-</select>
+          <select>
+            <option value='volvo'>มหาลัยเชียงใหม่</option>
+            <option value='saab'>มหาลัยเเม่โจ้</option>
+            <option value='opel'>มหาวิทยลัยธรรมศาสตร์</option>
+            <option value='audi'>มหาลัยจุฬาลงกรณ์</option>
+          </select>
 
-<select>
-    <option value="volvo">หมวดหมู่</option>
-    <option value="saab">ร้านอาหาร</option>
-    <option value="opel">ของหวาน</option>
-    <option value="audi">ของกินเล่น</option>
-</select>
-    
-    </Test>
-    <from>
-    <input type="text" placeholder="หัวข้อที่จะโพส"></input>
-    <input type="text" placeholder="สถานที่ที่จะโพสลง เช่น มหาวิทยลัยเชียงใหม่"></input>
-    <CKEditor editor={ClassicEditor}  placeholder="รายละเอียดโพส เช่น วันนี้กินร้านไหนดีแนะนำหน่อย"
-    onChange={handleOnChange}
-    />
-    <button type="submit">โพส</button>
-    {ReactHtmlParser(value)}
-    </from>
-    </BackContent>
+          <select>
+            <option value='volvo'>หมวดหมู่</option>
+            <option value='saab'>ร้านอาหาร</option>
+            <option value='opel'>ของหวาน</option>
+            <option value='audi'>ของกินเล่น</option>
+          </select>
+
+        </Test>
+        <from>
+          <input type='text' placeholder='หัวข้อที่จะโพส' />
+          <input type='text' placeholder='สถานที่ที่จะโพสลง เช่น มหาวิทยลัยเชียงใหม่' />
+          <CKEditor
+            editor={ClassicEditor} placeholder='รายละเอียดโพส เช่น วันนี้กินร้านไหนดีแนะนำหน่อย'
+            onChange={handleOnChange}
+          />
+          <button type='submit'>โพส</button>
+          {ReactHtmlParser(value)}
+        </from>
+      </BackContent>
+      <Footer><TextFooter>Copy right by where to eat</TextFooter></Footer>
+    </>
   )
 }
 export default Post
