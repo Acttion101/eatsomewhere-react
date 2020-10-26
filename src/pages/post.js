@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Navbar from "../components/Post/Navbar"
-import Content from "../components/Post/Content"
+import Navbar from '../components/Post/Navbar'
+import Content from '../components/Post/Content'
 
 const LoginContainer = styled.div`
   display:flex;
@@ -11,12 +11,12 @@ const LoginContainer = styled.div`
   background-color: #bf7f4bc9;
 `
 
-function Post() {
+function Post () {
   return (
     <LoginContainer>
       <Navbar />
       <Content />
     </LoginContainer>
-  );
+  )
 }
 export default Post

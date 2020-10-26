@@ -11,7 +11,7 @@ const LoginContainer = styled.div`
   background-color: #bf7f4bc9;
 `
 
-function PostView() {
+function PostView () {
   return (
     <LoginContainer>
       <Navbar />
