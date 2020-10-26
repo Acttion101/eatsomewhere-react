@@ -1,5 +1,9 @@
 import React from 'react'
-import { NavContainerRegister, NavButtonRegister } from './styled'
+import {
+  NavContainerLogin,
+  NavButtonLogin,
+  Hello
+} from '../../Login/Navbar/styled'
 import {
   Text,
   Logo
@@ -8,16 +12,17 @@ import { Link } from 'react-router-dom'
 
 function Navbar () {
   return (
-    <NavContainerRegister>
+    <NavContainerLogin>
       <Logo>
         <Text>WHERE TO EAT</Text>
       </Logo>
-      <Link to='/login'>
-        <NavButtonRegister>
-          เข้าสู่ระบบ
-        </NavButtonRegister>
-      </Link>
-    </NavContainerRegister>
+      <Hello>
+        <Link to='/login'>
+          <NavButtonLogin> เข้าสู่ระบบ </NavButtonLogin>
+        </Link>
+
+      </Hello>
+    </NavContainerLogin>
   )
 }
 

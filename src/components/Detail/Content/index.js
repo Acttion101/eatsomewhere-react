@@ -38,7 +38,7 @@ function Content () {
         </BoxInput>
       </Box>
       <Footer>
-        <TextFooter>Copy right by where to eat</TextFooter>
+        <TextFooter>wheretoeat@gmail.com</TextFooter>
       </Footer>
     </ContentDetail>
   )

@@ -92,7 +92,7 @@ function Content () {
           </ContentDetail>
         </HomePromotion>
         <Footer>
-          <TextFooter>Copy right by where to eat</TextFooter>
+          <TextFooter>wheretoeat@gmail.com</TextFooter>
         </Footer>
       </ContentHome>
     </ContainerHome>
