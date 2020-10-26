@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Logo from '../../../assets/Logo.jpg'
+// import Logo from '../../../assets/Logo.jpg'
 export const ContainerLogin = styled.div`
   display: flex;
   justify-content: center;
@@ -18,7 +18,6 @@ export const FormLogin = styled.form`
   justify-content: center;
   flex-direction: column;
   align-items: center;
- 
 `
 
 export const InputLogin = styled.input`
@@ -47,12 +46,11 @@ export const ButtonLogin = styled.button`
     transform: translateY(4px);
   }
 `
-export const ImageLogo = styled.div`
-  
-  background-image: url(${Logo});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 450px;
-  width: 450px;
-`
+// export const ImageLogo = styled.div`
+//   background-image: url(${Logo});
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   height: 450px;
+//   width: 450px;
+// `

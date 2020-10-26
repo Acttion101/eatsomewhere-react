@@ -4,7 +4,7 @@ import {
   ContentLogin,
   FormLogin,
   InputLogin,
-  ButtonLogin, ImageLogo
+  ButtonLogin
 } from './styled'
 import { TextFooter } from '../../Typography'
 import { Footer } from '../../Footer/styled'
@@ -17,7 +17,7 @@ function Content () {
   return (
     <>
       <ContainerLogin>
-        <ContentLogin><ImageLogo /></ContentLogin>
+        <ContentLogin />
         <ContentLogin>
           <FormLogin>
             <InputLogin
@@ -34,11 +34,11 @@ function Content () {
             />
             <ButtonLogin>เข้าสู่ระบบ</ButtonLogin>
           </FormLogin>
-
         </ContentLogin>
-
       </ContainerLogin>
-      <Footer><TextFooter>Copy right by where to eat</TextFooter></Footer>
+      <Footer>
+        <TextFooter>Copy right by where to eat</TextFooter>
+      </Footer>
     </>
   )
 }
