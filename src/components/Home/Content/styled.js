@@ -22,7 +22,7 @@ export const Topic = styled.div`
   display: flex;
   flex-direction: column;
   width: 95%;
-  height:100%;
+  height: 100%;
   justify-content: flex-start;
 `
 
@@ -34,22 +34,22 @@ export const ContentDetail = styled.div`
   display: flex;
   flex: 0.5;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  margin-top:30px;
+  margin-top: 30px;
 `
-//end Store
+// end Store
 
-//Hot
+// Hot
 export const CardHot = styled.div`
   display: flex;
-  flex: 0.5;
+  flex: 1;
   flex-direction: column;
   margin-left: 2rem;
   align-items: center;
   border: solid 5px #f37305;
   border-radius: 30px;
-  padding: 100px;
+  padding: 7rem;
   box-shadow: 6px 6px 7px 3px rgba(0, 0, 0, 0.301);
 `
 export const LineHot = styled.div`
@@ -65,11 +65,11 @@ export const HomeHot = styled.div`
   flex-direction: column;
   height: 70%;
   width: 100vw;
-  padding:45px 0px;
+  padding: 45px 0px;
 `
-//endHot
+// endHot
 
-//Pro
+// Pro
 export const CardPro = styled.div`
   display: flex;
   flex: 0.5;
@@ -78,7 +78,7 @@ export const CardPro = styled.div`
   align-items: center;
   border: solid 5px #ffffff;
   border-radius: 30px;
-  padding: 100px;
+  padding: 7rem;
 
   box-shadow: 6px 6px 7px 3px rgba(0, 0, 0, 0.301);
 `
@@ -98,28 +98,31 @@ export const HomePromotion = styled.div`
   justify-content: center;
   flex-direction: column;
   background-color: #af0909;
-  padding:45px 0px;
-  margin-bottom:45px;
+  padding: 45px 0px;
+  margin-bottom: 45px;
 `
-//endPro
+// endPro
 
-//img
+// img
 export const Button = styled.button`
   order: 1;
   align-self: flex-end;
 `
 
 export const ContentImage = styled.div`
+  padding:0rem 0rem 15rem 0rem;
   display: flex;
+  flex-direction:column;
   align-items: center;
   justify-content: center;
-  height: 30%;
-  width: 100vw;
-  background-image: url(Promotion.jpg);
+  height: 100%;
+  width: 100%;
+  background-color: #000;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative;
+  color: #ffffff;
 `
-//endimg
+// endimg

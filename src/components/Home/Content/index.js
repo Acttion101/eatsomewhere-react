@@ -14,8 +14,10 @@ import {
   Topic,
   ContentDetail
 } from './styled'
+import { Footer } from '../../Footer/styled'
 // import Review from 'react-star-rating'
-import { TextStore, TextTopicHot, TextTopicPromotion } from '../../Typography'
+import { TextStore, TextTopicHot, TextTopicPromotion, TextFooter } from '../../Typography'
+
 import { Link } from 'react-router-dom'
 
 // import backgroundImage from '../assets/Promotion.jpg'
@@ -80,6 +82,7 @@ function Content () {
             </CardPro>
           </ContentDetail>
         </HomePromotion>
+        <Footer><TextFooter>Copy right by where to eat</TextFooter></Footer>
       </ContentHome>
     </ContainerHome>
   )

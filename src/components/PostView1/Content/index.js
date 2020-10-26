@@ -3,7 +3,7 @@ import { BackContent, Card, Container, Comment } from './styled'
 import styled from 'styled-components'
 
 const Test = styled.div`
-  width: 1500px;
+  width: 80vw;
   height: 150px;
   background-color: #a25c20;
   border-radius: 20px;

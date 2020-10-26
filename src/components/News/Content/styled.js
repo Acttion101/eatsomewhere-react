@@ -17,7 +17,7 @@ export const Container = styled.div`
 `
 export const Card = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 1200px;
+  width: auto;
   height: 300px;
   &:hover{
     box-shadow: 0 8px 30px 0 rgba(0,0,0,0.2);

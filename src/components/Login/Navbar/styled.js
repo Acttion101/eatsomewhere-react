@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-
 export const NavContainerLogin = styled.div`
   background-color: #FF7700;
   display: flex;
@@ -11,7 +10,7 @@ export const NavContainerLogin = styled.div`
 `
 
 export const NavButtonLogin = styled.button`
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   border: #707070 solid 2px;
   border: none;
   background-color: #ffffff;
@@ -28,5 +27,3 @@ export const NavButtonLogin = styled.button`
 
 
 `
-
-

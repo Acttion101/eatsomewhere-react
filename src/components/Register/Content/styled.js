@@ -4,7 +4,7 @@ export const ContainerRegister = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 81vh;
   width: 100vw;
   background-color: #bf804b;
 `
