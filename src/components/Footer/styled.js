@@ -6,7 +6,7 @@ export const Footer = styled.footer`
   justify-content: space-between;
   padding: 10px;
   height: auto;
-  width:100vw;
+  width:98.8vw;
 
  
 `
