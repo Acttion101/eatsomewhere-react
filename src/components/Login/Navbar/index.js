@@ -10,7 +10,6 @@ function Navbar () {
   return (
     <NavContainerLogin>
       <Logo>
-        <Link to='/home'>Logo</Link>
         <Text>WHERE TO EAT</Text>
       </Logo>
       <Link to='/register'>

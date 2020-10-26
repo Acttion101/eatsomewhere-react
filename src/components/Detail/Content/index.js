@@ -10,9 +10,11 @@ import {
   BoxInput,
   ContentButton,
   ListComment
+  , Picture
 } from './styled'
-import { TopicText, Detail } from '../../Typography'
-import { Image } from '../../../assets/img1.jpg'
+import { TopicText, Detail, TextFooter } from '../../Typography'
+import { Footer } from '../../Footer/styled'
+
 import { useComment } from '../contexts/ActionContext'
 import Comment from './ListComment'
 
@@ -32,7 +34,9 @@ function Content ({ onSubmit }) {
           <TopicText>ร้านVolcano</TopicText>
           <Line />
         </TopicDetail>
-        <DetailImage src={Image} />
+        <DetailImage>
+          <Picture />
+        </DetailImage>
         <Detail>ชื่อร้าน : ร้านVolcano</Detail>
         <Detail>
           รายละเอียด : ร้านอยู่เเถวโครงการ PP Place หน้าปากซอย 5 บ้านใหม่หลังมอ
@@ -65,6 +69,9 @@ function Content ({ onSubmit }) {
           </ContentButton>
         </BoxInput>
       </Box>
+      <Footer>
+        <TextFooter>Copy right by where to eat</TextFooter>
+      </Footer>
     </ContentDetail>
   )
 }

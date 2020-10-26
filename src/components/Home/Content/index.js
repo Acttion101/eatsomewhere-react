@@ -12,26 +12,27 @@ import {
   LineHot,
   LinePro,
   Topic,
-  ContentDetail
+  ContentDetail,
+  Test, ImageStore
 } from './styled'
 import { Footer } from '../../Footer/styled'
-// import Review from 'react-star-rating'
-import { TextStore, TextTopicHot, TextTopicPromotion, TextFooter } from '../../Typography'
+
+import {
+  TextStore,
+  TextTopicHot,
+  TextTopicPromotion,
+  TextFooter
+} from '../../Typography'
 
 import { Link } from 'react-router-dom'
 
-// import backgroundImage from '../assets/Promotion.jpg'
-// const handleRatingClick = (e, data)=> {
-
-//   alert('You left a ' + data.rating + ' star rating for ' + data.caption);
-
-// }
 function Content () {
   return (
     <ContainerHome>
       <ContentImage>
-        img
-        <Button><Link to='/news'>อ่านเพิ่มเติม</Link></Button>
+        <Test>
+          <Button><Link to='/news'>อ่านเพิ่มเติม</Link></Button>
+        </Test>
       </ContentImage>
 
       <ContentHome>
@@ -42,19 +43,24 @@ function Content () {
           </Topic>
           <ContentDetail>
             <CardHot>
-              <Link to='/detail'><StoreImg>dsss</StoreImg></Link>
-              <TextStore>hhhhhh</TextStore>
-              {/* <Review name="handler" caption="Use onClick Handlers!" totalStars={5} onRatingClick={handleRatingClick} />  */}
+              <Link to='/detail'>
+                <StoreImg><ImageStore /></StoreImg>
+              </Link>
+              <TextStore>ร้านโวคาโน่</TextStore>
             </CardHot>
             <CardHot>
-              <StoreImg>dsss</StoreImg>
+              <Link to='/detail'>
+                <StoreImg><ImageStore /></StoreImg>
+              </Link>
               <TextStore>hhhhhh</TextStore>
-              {/* <Review name="handler" caption="Use onClick Handlers!" totalStars={5} onRatingClick={handleRatingClick} /> */}
+
             </CardHot>
             <CardHot>
-              <StoreImg>dsss</StoreImg>
+              <Link to='/detail'>
+                <StoreImg><ImageStore /></StoreImg>
+              </Link>
               <TextStore>hhhhhh</TextStore>
-              {/* <Review name="handler" caption="Use onClick Handlers!" totalStars={5} onRatingClick={handleRatingClick} /> */}
+
             </CardHot>
           </ContentDetail>
         </HomeHot>
@@ -66,23 +72,28 @@ function Content () {
           </Topic>
           <ContentDetail>
             <CardPro>
-              <StoreImg>dsss</StoreImg>
+              <Link to='/detail'>
+                <StoreImg><ImageStore /></StoreImg>
+              </Link>
               <TextStore>hhhhhh</TextStore>
-              {/* <Review name="handler" caption="Use onClick Handlers!" totalStars={5} onRatingClick={handleRatingClick} /> */}
             </CardPro>
             <CardPro>
-              <StoreImg>dsss</StoreImg>
+              <Link to='/detail'>
+                <StoreImg><ImageStore /></StoreImg>
+              </Link>
               <TextStore>hhhhhh</TextStore>
-              {/* <Review name="handler" caption="Use onClick Handlers!" totalStars={5} onRatingClick={handleRatingClick} /> */}
             </CardPro>
             <CardPro>
-              <StoreImg>dsss</StoreImg>
+              <Link to='/detail'>
+                <StoreImg><ImageStore /></StoreImg>
+              </Link>
               <TextStore>hhhhhh</TextStore>
-              {/* <Review name="handler" caption="Use onClick Handlers!" totalStars={5} onRatingClick={handleRatingClick} /> */}
             </CardPro>
           </ContentDetail>
         </HomePromotion>
-        <Footer><TextFooter>Copy right by where to eat</TextFooter></Footer>
+        <Footer>
+          <TextFooter>Copy right by where to eat</TextFooter>
+        </Footer>
       </ContentHome>
     </ContainerHome>
   )

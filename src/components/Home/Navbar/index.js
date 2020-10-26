@@ -15,7 +15,7 @@ function Navbar () {
     <NavBarContainer>
       <Logo>
 
-        <Link to='/'><Text>WHERE TO EAT</Text>Logo</Link>
+        <Link to='/'><Text>WHERE TO EAT</Text></Link>
       </Logo>
       <ActionContainer>
         <Link to='/news'>

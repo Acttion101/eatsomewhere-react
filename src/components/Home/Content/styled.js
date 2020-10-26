@@ -1,11 +1,13 @@
 import styled from 'styled-components'
+import Img from '../../../assets/Promotion.png'
+import store from '../../../assets/store.jpg'
 
 export const ContainerHome = styled.div`
   display: flex;
   flex: 1;
   flex-direction: column;
 
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
 `
 export const ContentHome = styled.div`
@@ -26,7 +28,8 @@ export const Topic = styled.div`
   justify-content: flex-start;
 `
 
-export const StoreImg = styled.div``
+export const StoreImg = styled.div`
+`
 
 export const Review = styled.div``
 
@@ -49,7 +52,7 @@ export const CardHot = styled.div`
   align-items: center;
   border: solid 5px #f37305;
   border-radius: 30px;
-  padding: 7rem;
+  /* padding: 7rem; */
   box-shadow: 6px 6px 7px 3px rgba(0, 0, 0, 0.301);
 `
 export const LineHot = styled.div`
@@ -78,7 +81,6 @@ export const CardPro = styled.div`
   align-items: center;
   border: solid 5px #ffffff;
   border-radius: 30px;
-  padding: 7rem;
 
   box-shadow: 6px 6px 7px 3px rgba(0, 0, 0, 0.301);
 `
@@ -107,22 +109,51 @@ export const HomePromotion = styled.div`
 export const Button = styled.button`
   order: 1;
   align-self: flex-end;
+  
+  margin:3rem;
+  height:3rem;
+  width:auto;
+  font-size:1.5rem;
+  border-radius:1rem;
+  border:solid 1px #000;
+  background-color:#ffffff;
 `
 
 export const ContentImage = styled.div`
-  padding:0rem 0rem 15rem 0rem;
+  /* padding:0rem 0rem 15rem 0rem; */
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100%;
+  justify-content: flex-end;
+  height: 50vh;
   width: 100%;
-  background-color: #000;
+
+  position: relative;
+ 
+`
+
+export const Test = styled.div`
+  display: flex;
+  
+  align-items: center;
+  justify-content: flex-end;
+  background-image: url(${Img});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  position: relative;
-  color: #ffffff;
+  height: 100vh;
+  width: 100%;
+`
+
+export const ImageStore = styled.div`
+  display: flex;
+
+  background-image: url(${store});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 300px;
+  border-radius:20px;
 `
 // endimg

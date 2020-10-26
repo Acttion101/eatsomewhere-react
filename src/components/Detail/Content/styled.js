@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Store from '../../../assets/store.jpg'
 
 export const ContentDetail = styled.div`
   display: flex;
@@ -34,6 +35,7 @@ export const TopicDetail = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-left:2rem;
 `
 
 // endBox
@@ -41,17 +43,21 @@ export const TopicDetail = styled.div`
 // img
 
 export const DetailImage = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 50%;
-  background-image: url(Promotion.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+margin:1rem;
+  height: 60vh;
+  width: 100%;
   position: relative;
+`
+export const Picture = styled.div`
+ display: flex;
+justify-content:center;
+align-items:center;
+background-image: url(${Store});
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 100%;
+width: 100%;
 `
 // endimg
 
