@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Navbar from "../components/Community/Navbar"
-import Content from "../components/Community/Content"
+import Navbar from '../components/Community/Navbar'
+import Content from '../components/Community/Content'
 
 const LoginContainer = styled.div`
   display:flex;
@@ -11,12 +11,12 @@ const LoginContainer = styled.div`
   background-color: #bf7f4bc9;
 `
 
-function Community() {
+function Community () {
   return (
     <LoginContainer>
       <Navbar />
       <Content />
     </LoginContainer>
-  );
+  )
 }
 export default Community
