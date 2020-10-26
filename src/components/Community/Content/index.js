@@ -41,40 +41,55 @@ function Community () {
             <option value='opel'>ของหวาน</option>
             <option value='audi'>ของกินเล่น</option>
           </select>
-
         </Test>
         <Card>
-          <h1>ชื่อผู้ใช้</h1>
-          <Container>
-            <h4>
-              <b> หาร้านอร่อยในหอสาม</b>
-            </h4>
-            <p>หาร้านอร่อยแถวหอสามอยู่หอสามายแล้วไม่รู้จะกิรอะไรดีเพื่อนๆช่วยแนะนำหน่อยครับ</p>
-          </Container>
+          <Link to='/postview1'>
+            <h1>ชื่อผู้ใช้</h1>
+            <Container>
+              <h4>
+                <b> หาร้านอร่อยในหอสาม</b>
+              </h4>
+              <p>
+                หาร้านอร่อยแถวหอสามอยู่หอสามายแล้วไม่รู้จะกิรอะไรดีเพื่อนๆช่วยแนะนำหน่อยครับ
+              </p>
+            </Container>
+          </Link>
         </Card>
 
         <Card>
-          <h1>ชื่อผู้ใช้</h1>
-          <Container>
-            <h4>
-              <b> หาร้านอร่อยในหอสาม</b>
-            </h4>
-            <p>หาร้านอร่อยแถวหอสามอยู่หอสามายแล้วไม่รู้จะกิรอะไรดีเพื่อนๆช่วยแนะนำหน่อยครับ</p>
-          </Container>
+          <Link to='/postview1'>
+            <h1>ชื่อผู้ใช้</h1>
+            <Container>
+              <h4>
+                <b> หาร้านอร่อยในหอสาม</b>
+              </h4>
+              <p>
+                หาร้านอร่อยแถวหอสามอยู่หอสามายแล้วไม่รู้จะกิรอะไรดีเพื่อนๆช่วยแนะนำหน่อยครับ
+              </p>
+            </Container>
+          </Link>
         </Card>
         <Card>
-          <h1>ชื่อผู้ใช้</h1>
-          <Container>
-            <h4>
-              <b> หาร้านอร่อยในหอสาม</b>
-            </h4>
-            <p>หาร้านอร่อยแถวหอสามอยู่หอสามายแล้วไม่รู้จะกิรอะไรดีเพื่อนๆช่วยแนะนำหน่อยครับ</p>
-          </Container>
+          <Link to='/postview1'>
+            <h1>ชื่อผู้ใช้</h1>
+            <Container>
+              <h4>
+                <b> หาร้านอร่อยในหอสาม</b>
+              </h4>
+              <p>
+                หาร้านอร่อยแถวหอสามอยู่หอสามายแล้วไม่รู้จะกิรอะไรดีเพื่อนๆช่วยแนะนำหน่อยครับ
+              </p>
+            </Container>
+          </Link>
         </Card>
-        <NavButtonHome> <Link to='/post'>โพสข้อความ</Link></NavButtonHome>
-
+        <NavButtonHome>
+          {' '}
+          <Link to='/post'>โพสข้อความ</Link>
+        </NavButtonHome>
       </BackContent>
-      <Footer><TextFooter>Copy right by where to eat</TextFooter></Footer>
+      <Footer>
+        <TextFooter>Copy right by where to eat</TextFooter>
+      </Footer>
     </>
   )
 }
