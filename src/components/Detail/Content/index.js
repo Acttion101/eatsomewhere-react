@@ -1,32 +1,18 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
   ContentDetail,
   Box,
   TopicDetail,
   Line,
   DetailImage,
-  InputComment,
-  ButtonComment,
   BoxInput,
-  ContentButton,
-  ListComment
-  , Picture
+  Picture
 } from './styled'
 import { TopicText, Detail, TextFooter } from '../../Typography'
 import { Footer } from '../../Footer/styled'
+import TodoList from '../../Todo/TodoList'
 
-import { useComment } from '../contexts/ActionContext'
-import Comment from './ListComment'
-
-function Content ({ onSubmit }) {
-  const [value, setValue] = useState('')
-  const [{ comments, handleAddComment }] = useComment()
-  const handleSubmit = (event) => {
-    event.preventDefault()
-    onSubmit(value)
-    setValue('')
-  }
-  const handleInput = event => setValue(event.target.value)
+function Content () {
   return (
     <ContentDetail>
       <Box>
@@ -46,27 +32,9 @@ function Content ({ onSubmit }) {
         </Detail>
         <Detail>เบอร์โทร : 065-705-0905, 062-172-2270, 062-172-2205</Detail>
       </Box>
-
       <Box>
-
-        <BoxInput onSubmit={handleSubmit}>
-          <ListComment title='Comment'>
-            {comments.map((item) => (
-              <Comment key={item.id} id={item.id} type={item.type}>
-                {item.content}
-              </Comment>
-            ))}
-          </ListComment>
-          <InputComment
-            type='text'
-            value={value}
-            placeholder='แสดงความคิดเห็น'
-            onChange={handleInput}
-          />
-
-          <ContentButton>
-            <ButtonComment onSubmit={handleAddComment}>แสดงความคิดเห็น</ButtonComment>
-          </ContentButton>
+        <BoxInput>
+          <TodoList />
         </BoxInput>
       </Box>
       <Footer>

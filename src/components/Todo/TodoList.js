@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import TodoForm from './TodoFrom'
 import Todo from './Todo'
-
+import {
+  Text
+} from '../Detail/Content/styled'
 function TodoList () {
   const [todos, setTodos] = useState([])
 
@@ -28,7 +30,8 @@ function TodoList () {
       <div className='textComment'>
         <Todo todos={todos} completeTodo={completeTodo} />
       </div>
-      <h1>comment</h1>
+      <Text>comment</Text>
+
       <TodoForm onSubmit={addTodo} />
 
     </div>
