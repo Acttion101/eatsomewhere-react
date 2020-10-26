@@ -2,9 +2,7 @@ import React from 'react'
 import {
   NavContainerLogin,
   NavButtonLogin,
-  NavButtonHome,
-  Hello,
-  NavButtonNews
+  Hello
 } from './styled'
 import { Link } from 'react-router-dom'
 import { Text, Logo } from '../../Typography'
@@ -16,17 +14,8 @@ function Navbar () {
         <Text>WHERE TO EAT</Text>
       </Logo>
       <Hello>
-        <Link to='/'>
-          <NavButtonHome> หน้าหลัก</NavButtonHome>
-        </Link>
-        <Link to='/community'>
-          <NavButtonLogin> ชุมชน </NavButtonLogin>
-        </Link>
-        <Link to='/news'>
-          <NavButtonNews> ข่าวสาร</NavButtonNews>
-        </Link>
         <Link to='/register'>
-          <NavButtonLogin> เข้าสู่ระบบ </NavButtonLogin>
+          <NavButtonLogin> ลงทะเบียน </NavButtonLogin>
         </Link>
 
       </Hello>

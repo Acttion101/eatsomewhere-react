@@ -88,7 +88,7 @@ function Community () {
         </NavButtonHome>
       </BackContent>
       <Footer>
-        <TextFooter>Copy right by where to eat</TextFooter>
+        <TextFooter>wheretoeat@gmail.com</TextFooter>
       </Footer>
     </>
   )

@@ -72,7 +72,7 @@ function Content () {
           </FormRegister>
         </ContentRegister>
       </ContainerRegister>
-      <Footer><TextFooter>Copy right by where to eat</TextFooter></Footer>
+      <Footer><TextFooter>wheretoeat@gmail.com</TextFooter></Footer>
     </>
   )
 }
