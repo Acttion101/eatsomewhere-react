@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { BackContent, Card, Container, Comment } from './styled'
 import styled from 'styled-components'
+import TodoList from '../../Todo/TodoList'
 
 const Test = styled.div`
   width: 80vw;
@@ -18,13 +19,7 @@ const Test = styled.div`
     color: white;
   }
 `
-function PostView ({ children, index, type, onSubmit = () => null }) {
-  const [value, setValue] = useState('')
-  const handleSubmit = event => {
-    event.preventDefault()
-    onSubmit(value)
-  }
-  const handleInputChang = (event) => setValue(event.target.value)
+function PostView () {
   return (
     <BackContent>
       <Test>
@@ -55,11 +50,8 @@ function PostView ({ children, index, type, onSubmit = () => null }) {
           </p>
         </Container>
       </Card>
-      <Comment onSubmit={handleSubmit}>
-        {children}
-        <p>ชื่อผู้ใช้</p>
-        <input value={value} onChange={handleInputChang} />{' '}
-        <button>ส่งความคิดเห็น</button>
+      <Comment>
+        <TodoList />
       </Comment>
     </BackContent>
   )
