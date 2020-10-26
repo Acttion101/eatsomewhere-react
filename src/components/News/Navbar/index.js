@@ -15,7 +15,7 @@ function Navbar () {
       <Hello>
 
         <Link to='/'><NavButtonHome> หน้าหลัก</NavButtonHome></Link>
-        <Link to='/news'><NavButtonNews> ข่าวสาร</NavButtonNews></Link>
+        <Link to='/community'><NavButtonNews> ชุมนุม</NavButtonNews></Link>
         <Link to='/register'><NavButtonLogin> ชื่อผู้ใช้ </NavButtonLogin></Link>
       </Hello>
     </NavContainerLogin>

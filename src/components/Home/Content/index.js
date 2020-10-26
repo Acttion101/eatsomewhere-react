@@ -13,10 +13,10 @@ import {
   LinePro,
   Topic,
   ContentDetail,
-  Test
+  Test, ImageStore
 } from './styled'
 import { Footer } from '../../Footer/styled'
-// import Review from 'react-star-rating'
+
 import {
   TextStore,
   TextTopicHot,
@@ -44,17 +44,23 @@ function Content () {
           <ContentDetail>
             <CardHot>
               <Link to='/detail'>
-                <StoreImg>dsss</StoreImg>
+                <StoreImg><ImageStore /></StoreImg>
+              </Link>
+              <TextStore>ร้านโวคาโน่</TextStore>
+            </CardHot>
+            <CardHot>
+              <Link to='/detail'>
+                <StoreImg><ImageStore /></StoreImg>
               </Link>
               <TextStore>hhhhhh</TextStore>
+
             </CardHot>
             <CardHot>
-              <StoreImg>dsss</StoreImg>
+              <Link to='/detail'>
+                <StoreImg><ImageStore /></StoreImg>
+              </Link>
               <TextStore>hhhhhh</TextStore>
-            </CardHot>
-            <CardHot>
-              <StoreImg>dsss</StoreImg>
-              <TextStore>hhhhhh</TextStore>
+
             </CardHot>
           </ContentDetail>
         </HomeHot>
@@ -66,15 +72,21 @@ function Content () {
           </Topic>
           <ContentDetail>
             <CardPro>
-              <StoreImg>dsss</StoreImg>
+              <Link to='/detail'>
+                <StoreImg><ImageStore /></StoreImg>
+              </Link>
               <TextStore>hhhhhh</TextStore>
             </CardPro>
             <CardPro>
-              <StoreImg>dsss</StoreImg>
+              <Link to='/detail'>
+                <StoreImg><ImageStore /></StoreImg>
+              </Link>
               <TextStore>hhhhhh</TextStore>
             </CardPro>
             <CardPro>
-              <StoreImg>dsss</StoreImg>
+              <Link to='/detail'>
+                <StoreImg><ImageStore /></StoreImg>
+              </Link>
               <TextStore>hhhhhh</TextStore>
             </CardPro>
           </ContentDetail>
