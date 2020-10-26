@@ -4,7 +4,7 @@ import {
   ContentLogin,
   FormLogin,
   InputLogin,
-  ButtonLogin
+  ButtonLogin, ImageLogo
 } from './styled'
 import { TextFooter } from '../../Typography'
 import { Footer } from '../../Footer/styled'
@@ -17,7 +17,7 @@ function Content () {
   return (
     <>
       <ContainerLogin>
-        <ContentLogin>img</ContentLogin>
+        <ContentLogin><ImageLogo /></ContentLogin>
         <ContentLogin>
           <FormLogin>
             <InputLogin
