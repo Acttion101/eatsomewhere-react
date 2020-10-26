@@ -31,9 +31,9 @@ export const TextFooter = styled.span`
   /* margin:0rem 0rem 0rem 4rem; */
 `
 
-export const TextStore = styled.span`
+export const TextStore = styled.h1`
   color: #000;
-  font-size: 10px;
+  
 `
 export const TextTopicHot = styled.h1`
   color: #000;
