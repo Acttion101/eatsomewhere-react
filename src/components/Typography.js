@@ -32,7 +32,9 @@ export const TextFooter = styled.span`
 `
 
 export const TextStore = styled.h1`
-  color: #000;
+margin:1rem;
+  color: #DF5000;
+  font-size:1.5rem;
   
 `
 export const TextTopicHot = styled.h1`
@@ -45,12 +47,13 @@ export const TextTopicPromotion = styled.h1`
 `
 export const TopicText = styled.h1`
   color: #000000;
-  font-size: 1rem;
+  font-size: 1.5rem;
 `
-export const Detail = styled.p`
+export const Detail = styled.h2`
   display: flex;
   flex: 1;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   color: #000000;
-  font-size: 1rem;
+  font-size: 25px;
+  padding-left:1rem;
 `
