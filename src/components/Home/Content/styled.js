@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import Img from '../../../assets/Promotion.png'
+import store from '../../../assets/store.jpg'
 
 export const ContainerHome = styled.div`
   display: flex;
@@ -27,7 +28,8 @@ export const Topic = styled.div`
   justify-content: flex-start;
 `
 
-export const StoreImg = styled.div``
+export const StoreImg = styled.div`
+`
 
 export const Review = styled.div``
 
@@ -50,7 +52,7 @@ export const CardHot = styled.div`
   align-items: center;
   border: solid 5px #f37305;
   border-radius: 30px;
-  padding: 7rem;
+  /* padding: 7rem; */
   box-shadow: 6px 6px 7px 3px rgba(0, 0, 0, 0.301);
 `
 export const LineHot = styled.div`
@@ -79,7 +81,6 @@ export const CardPro = styled.div`
   align-items: center;
   border: solid 5px #ffffff;
   border-radius: 30px;
-  padding: 7rem;
 
   box-shadow: 6px 6px 7px 3px rgba(0, 0, 0, 0.301);
 `
@@ -128,7 +129,7 @@ export const ContentImage = styled.div`
   width: 100%;
 
   position: relative;
-  color: #ffffff;
+ 
 `
 
 export const Test = styled.div`
@@ -142,5 +143,17 @@ export const Test = styled.div`
   background-position: center;
   height: 100vh;
   width: 100%;
+`
+
+export const ImageStore = styled.div`
+  display: flex;
+
+  background-image: url(${store});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 250px;
+  width: 300px;
+  border-radius:20px;
 `
 // endimg
