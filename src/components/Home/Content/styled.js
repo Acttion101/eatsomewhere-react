@@ -28,10 +28,7 @@ export const Topic = styled.div`
   justify-content: flex-start;
 `
 
-export const StoreImg = styled.div`
-`
-
-export const Review = styled.div``
+export const StoreImg = styled.div``
 
 export const ContentDetail = styled.div`
   display: flex;
@@ -81,7 +78,7 @@ export const CardPro = styled.div`
   align-items: center;
   border: solid 5px #ffffff;
   border-radius: 30px;
-background-color:#ffffff;
+  background-color: #ffffff;
   box-shadow: 6px 6px 7px 3px rgba(0, 0, 0, 0.301);
 `
 
@@ -109,16 +106,14 @@ export const HomePromotion = styled.div`
 export const Button = styled.button`
   order: 1;
   align-self: flex-end;
-  
-  margin:3rem;
-  height:3rem;
-  width:auto;
-  font-size:1.5rem;
-  border-radius:1rem;
-  border:solid 1px #000;
-  background-color:#ffffff;
+  margin: 3rem;
+  height: 3rem;
+  width: auto;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  border: solid 1px #000;
+  background-color: #ffffff;
 `
-
 export const ContentImage = styled.div`
   /* padding:0rem 0rem 15rem 0rem; */
   display: flex;
@@ -127,14 +122,10 @@ export const ContentImage = styled.div`
   justify-content: flex-end;
   height: 50vh;
   width: 100%;
-
   position: relative;
- 
 `
-
 export const Test = styled.div`
   display: flex;
-  
   align-items: center;
   justify-content: flex-end;
   background-image: url(${Img});
@@ -143,18 +134,18 @@ export const Test = styled.div`
   background-position: center;
   height: 100vh;
   width: 100%;
-  border-bottom:solid 1px;
+  border-bottom: solid 1px;
 `
 
 export const ImageStore = styled.div`
   display: flex;
-
   background-image: url(${store});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 250px;
   width: 300px;
-  border-radius:25px 25px 0px 0px;
+  border-radius: 25px 25px 0px 0px;
 `
+
 // endimg

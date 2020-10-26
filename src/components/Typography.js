@@ -39,11 +39,11 @@ margin:1rem;
 `
 export const TextTopicHot = styled.h1`
   color: #000;
-  font-size: 1rem;
+  font-size: 1.5rem;
 `
 export const TextTopicPromotion = styled.h1`
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 1.5rem;
 `
 export const TopicText = styled.h1`
   color: #000000;
