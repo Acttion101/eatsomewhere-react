@@ -81,7 +81,7 @@ export const CardPro = styled.div`
   align-items: center;
   border: solid 5px #ffffff;
   border-radius: 30px;
-
+background-color:#ffffff;
   box-shadow: 6px 6px 7px 3px rgba(0, 0, 0, 0.301);
 `
 
@@ -143,6 +143,7 @@ export const Test = styled.div`
   background-position: center;
   height: 100vh;
   width: 100%;
+  border-bottom:solid 1px;
 `
 
 export const ImageStore = styled.div`
@@ -154,6 +155,6 @@ export const ImageStore = styled.div`
   background-position: center;
   height: 250px;
   width: 300px;
-  border-radius:20px;
+  border-radius:25px 25px 0px 0px;
 `
 // endimg

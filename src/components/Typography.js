@@ -56,4 +56,5 @@ export const Detail = styled.h2`
   color: #000000;
   font-size: 25px;
   padding-left:1rem;
+  line-height:35px;
 `
