@@ -7,7 +7,7 @@ export const Text = styled.h1`
   /* align-items: center; */
   padding: 1rem;
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2rem;
 
   /* margin:0rem 0rem 0rem 4rem; */
 `

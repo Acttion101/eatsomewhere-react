@@ -5,12 +5,13 @@ const GlobalStyle = createGlobalStyle`
  ${reset}
 
  html,body,#root{
-   font-family :'Kanit',sanserif;
+  font-family: 'Fahkwang', sans-serif;
    height:100vh;
    width:100vw;
    font-size:20px;
  }
  a{
+  font-family: 'Fahkwang', sans-serif;
    text-decoration:none;
    color:inherit;
    &visited{

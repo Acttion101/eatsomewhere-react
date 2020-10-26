@@ -23,7 +23,7 @@ export const ContentHome = styled.div`
 export const Topic = styled.div`
   display: flex;
   flex-direction: column;
-  width: 95%;
+  width: 70%;
   height: 100%;
   justify-content: flex-start;
 `
