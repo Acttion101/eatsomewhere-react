@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Img from '../../../assets/img1.jpg'
 
 export const BackContent = styled.div`
   display: flex;
@@ -49,4 +50,7 @@ export const NavButtonHome = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+`
+export const Pic = styled.div`
+background-image:url(${Img});
 `
