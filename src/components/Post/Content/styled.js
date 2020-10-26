@@ -2,12 +2,12 @@ import styled from 'styled-components'
 
 export const BackContent = styled.div`
   display: flex;
-  margin: 50px 0 2rem 50px;
+  margin: 145px 0 145px 50px;
   padding: 0 10px 10px;
   border-radius: 2rem;
   align-items: top;
-  height: 100vh;
-  width: 70vw;
+  height: auto;
+  width: 60vw;
   background-color: #ffffff;
   flex-direction: column;
   align-items: center;

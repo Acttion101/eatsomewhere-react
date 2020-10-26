@@ -2,12 +2,12 @@ import styled from 'styled-components'
 
 export const BackContent = styled.div`
   display: flex;
-  margin: 50px 0 2rem 50px;
+  margin: 75px 0 75px 50px;
   padding: 0 10px 10px;
   border-radius: 2rem;
   align-items: top;
-  height: 100vh;
-  width: 70vw;
+  height: auto;
+  width: 60vw;
   background-color: #ffffff;
   flex-direction: column;
   align-items: center;
@@ -37,7 +37,8 @@ export const BackContent = styled.div`
   }
 `
 export const Container = styled.div`
-  padding: 2px 16px;
+  padding: 2px 20px;
+  line-height:35px;
 
 `
 export const Card = styled.div`

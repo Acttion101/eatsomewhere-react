@@ -7,19 +7,20 @@ export const BackContent = styled.div`
   padding: 10px;
   border-radius: 2rem;
   align-items: top;
-  height: 200vh;
-  width: 70vw;
+  height: auto;
+  width: auto;
   background-color: #ffffff;
   flex-direction: column;
 `
 export const Container = styled.div`
+margin-top:0.5rem;
   padding: 2px 16px;
   
 `
 export const Card = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: auto;
-  height: 300px;
+  height: auto;
   &:hover{
     box-shadow: 0 8px 30px 0 rgba(0,0,0,0.2);
   }
@@ -33,7 +34,7 @@ background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
 height: 250px;
-width: 1057px;
+
 `
 export const LineHot = styled.div`
   height: 6px;
