@@ -1,24 +1,23 @@
-import React, { Suspense} from 'react'
+import React, { Suspense } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import routes from './config/routes'
-import { Footer } from './components/Footer/styled'
+
 import GlobalStyle from './components/GlobalStyle'
-import { TextFooter } from '../src/components/Typography'
 
-
-function App() {
+function App () {
   return (
     <>
       <GlobalStyle />
       <Router>
-        <Suspense fallback="...Loading">
+        <Suspense fallback='...Loading'>
           <Switch>
-          {Object.keys(routes).map(routeKey => (
+            {Object.keys(routes).map(routeKey => (
               <Route key={routeKey} {...routes[routeKey]} />
             ))}
           </Switch>
-          <Footer><TextFooter>Copy right by where to eat</TextFooter></Footer>
+
         </Suspense>
+
       </Router>
     </>
   )
