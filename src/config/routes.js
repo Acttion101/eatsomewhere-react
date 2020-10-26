@@ -18,27 +18,33 @@ export default {
   },
   News: {
     path: '/news',
+    exact: true,
     component: lazy(() => import('../pages/News'))
   },
   post: {
     path: '/post',
+    exact: true,
     component: lazy(() => import('../pages/post'))
   },
   Detail: {
     path: '/detail',
+    exact: true,
     component: lazy(() => import('../pages/Detail'))
   },
   Community: {
     path: '/community',
+    exact: true,
     component: lazy(() => import('../pages/Community'))
   },
 
   PostView1: {
     path: '/postview1',
+    exact: true,
     component: lazy(() => import('../pages/PostView1'))
   },
   PostView2: {
     path: '/postview2',
+    exact: true,
     component: lazy(() => import('../pages/PostView2'))
   }
 }

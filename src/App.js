@@ -7,6 +7,7 @@ import GlobalStyle from './components/GlobalStyle'
 function App () {
   return (
     <>
+      <link href='https://fonts.googleapis.com/css2?family=Fahkwang:wght@300&family=Pridi&display=swap' rel='stylesheet' />
       <GlobalStyle />
       <Router>
         <Suspense fallback='...Loading'>
