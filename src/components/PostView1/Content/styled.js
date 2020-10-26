@@ -27,9 +27,12 @@ export const Container = styled.div`
 
 `
 export const Card = styled.div`
+   padding:10px 0 0 0 ;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   width: 1000px;
   height: 200px;
-  
+ margin:   20px 0 20px ;
+`
+export const Comment = styled.div`
 
 `

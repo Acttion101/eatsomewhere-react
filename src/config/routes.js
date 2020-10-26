@@ -1,7 +1,6 @@
 import { lazy } from 'react'
 
 export default {
-
   Home: {
     path: '/',
     exact: true,
@@ -33,9 +32,9 @@ export default {
     path: '/community',
     component: lazy(() => import('../pages/Community'))
   },
+
   PostView1: {
     path: '/postview1',
     component: lazy(() => import('../pages/PostView1'))
   }
-
 }
