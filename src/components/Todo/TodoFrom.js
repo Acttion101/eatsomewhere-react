@@ -1,5 +1,10 @@
 import React, { useState } from 'react'
-
+import {
+  InputComment,
+  ButtonComment,
+  ContentButton,
+  Form
+} from '../Detail/Content/styled'
 export default function TodoFrom (props) {
   const [input, setInput] = useState('')
 
@@ -17,12 +22,14 @@ export default function TodoFrom (props) {
     setInput('')
   }
   return (
-    <form className='todo-form' onSubmit={handleSubmit}>
-      <input
+    <Form className='todo-form' onSubmit={handleSubmit}>
+      <InputComment
         type='text' value={input} name='text' className='todo-input'
-        onChange={handleChange}
+        onChange={handleChange} placeholder='แสดงความคิดเห็น'
       />
-      <button className='todo-button'>ลงความคิดเห็นของคุณ</button>
-    </form>
+      <ContentButton>
+        <ButtonComment className='todo-button'>ลงความคิดเห็นของคุณ</ButtonComment>
+      </ContentButton>
+    </Form>
   )
 }
