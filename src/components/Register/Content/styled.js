@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import Logo from '../../../assets/Logo.jpg'
 export const ContainerRegister = styled.div`
   display: flex;
   justify-content: center;
@@ -53,4 +53,13 @@ export const ButtonRegister = styled.button`
     box-shadow: 0 5px #00000063;
     transform: translateY(4px);
   }
+`
+export const ImageLogo = styled.div`
+  
+  background-image: url(${Logo});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  width: 450px;
 `

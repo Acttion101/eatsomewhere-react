@@ -5,10 +5,11 @@ import {
   FormRegister,
   InputRegister,
   ButtonRegister,
-  ContentInputAgeDate
+  ContentInputAgeDate, ImageLogo
 } from './styled'
 import { TextFooter } from '../../Typography'
 import { Footer } from '../../Footer/styled'
+
 function Content () {
   const [value, setValue] = useState('')
   const [password, setPassword] = useState('')
@@ -22,10 +23,11 @@ function Content () {
   const handleInputLast = event => setLast(event.target.value)
   const handleInputAge = event => setAge(event.target.value)
   const handleInputDate = event => setDate(event.target.value)
+
   return (
     <>
       <ContainerRegister>
-        <ContentRegister>img</ContentRegister>
+        <ContentRegister><ImageLogo /></ContentRegister>
         <ContentRegister>
           <FormRegister>
             <InputRegister

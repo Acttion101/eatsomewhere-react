@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Navbar from "../components/News/Navbar"
-import Content from "../components/News/Content"
+import Navbar from '../components/News/Navbar'
+import Content from '../components/News/Content'
 
 const LoginContainer = styled.div`
   display:flex;
@@ -11,12 +11,12 @@ const LoginContainer = styled.div`
   background-color: #bf7f4bc9;
 `
 
-function News() {
+function News () {
   return (
     <LoginContainer>
       <Navbar />
       <Content />
     </LoginContainer>
-  );
+  )
 }
 export default News
