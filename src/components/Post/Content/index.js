@@ -8,7 +8,7 @@ import { Footer } from '../../Footer/styled'
 import { TextFooter } from '../../Typography'
 
 const Test = styled.div`
-  width: 80vw;
+  width: 70vw;
   height: 150px;
   background-color: #a25c20;
   border-radius: 20px;
@@ -44,7 +44,7 @@ const BG = styled.div`
 
 const Select = styled.select`
   border-radius: 5px;
-
+font-size:25px;
 `
 
 function Post () {
@@ -59,19 +59,19 @@ function Post () {
       <BackContent>
         <Test><h1>ชุมชน</h1>
           <BG>
-            <select>
+            <Select>
               <option value='volvo'>มหาลัยเชียงใหม่</option>
               <option value='saab'>มหาลัยเเม่โจ้</option>
               <option value='opel'>มหาวิทยลัยธรรมศาสตร์</option>
               <option value='audi'>มหาลัยจุฬาลงกรณ์</option>
-            </select>
+            </Select>
 
-            <select>
+            <Select>
               <option value='volvo'>หมวดหมู่</option>
               <option value='saab'>ร้านอาหาร</option>
               <option value='opel'>ของหวาน</option>
               <option value='audi'>ของกินเล่น</option>
-            </select>
+            </Select>
           </BG>
         </Test>
         <from>

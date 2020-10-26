@@ -1,13 +1,13 @@
 import React from 'react'
 import { BackContent, Container, Card, Pic, LineHot } from './styled'
-import { TextFooter } from '../../Typography'
+import { TextFooter, TextNews } from '../../Typography'
 import { Footer } from '../../Footer/styled'
 function index () {
   return (
     <>
       <BackContent>
 
-        <h1>ข่าวสารและกิจกรรม</h1>
+        <TextNews>ข่าวสารและกิจกรรม</TextNews>
         <LineHot />
         <Card><Pic />
           <Container>

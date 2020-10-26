@@ -3,10 +3,10 @@ import { BackContent, Card, Container, Comment } from './styled'
 import styled from 'styled-components'
 import { Footer } from '../../Footer/styled'
 import TodoList from '../../Todo/TodoList'
-import { TextFooter } from '../../Typography'
+import { TextFooter, TextNews } from '../../Typography'
 
 const Test = styled.div`
-  width: 80vw;
+  width: 70vw;
   height: 150px;
   background-color: #a25c20;
   border-radius: 20px;
@@ -42,6 +42,7 @@ const BG = styled.div`
 
 const Select = styled.select`
   border-radius: 5px;
+  font-size:25px;
 `
 function PostView () {
   return (
@@ -50,29 +51,30 @@ function PostView () {
         <Test>
           <h1>ชุมชน</h1>
           <BG>
-            <select>
+            <Select>
               <option value='volvo'>มหาลัยเชียงใหม่</option>
               <option value='saab'>มหาลัยเเม่โจ้</option>
               <option value='opel'>มหาวิทยลัยธรรมศาสตร์</option>
               <option value='audi'>มหาลัยจุฬาลงกรณ์</option>
-            </select>
+            </Select>
 
-            <select>
+            <Select>
               <option value='volvo'>หมวดหมู่</option>
               <option value='saab'>ร้านอาหาร</option>
               <option value='opel'>ของหวาน</option>
               <option value='audi'>ของกินเล่น</option>
-            </select>
+            </Select>
           </BG>
         </Test>
         <Card>
-          <h1>ชื่อผู้ใช้</h1>
+          <TextNews>ชื่อผู้ใช้</TextNews>
           <Container>
             <h4>
-              <b> หาร้านอร่อยในหอสาม</b>
+              <p> หาร้านอร่อยในหอสาม</p>
             </h4>
             <p>
-              หาร้านอร่อยแถวหอสามอยู่หอสามายแล้วไม่รู้จะกิรอะไรดีเพื่อนๆช่วยแนะนำหน่อยครับ
+
+              หาร้านอร่อยแถวหอสามอยู่หอสามายแล้วไม่รู้จะกินอะไรดีเพื่อนๆช่วยแนะนำหน่อยครับ
             </p>
           </Container>
         </Card>
@@ -81,7 +83,7 @@ function PostView () {
         </Comment>
       </BackContent>
       <Footer>
-        <TextFooter>Copy right by where to eat</TextFooter>
+        <TextFooter>wheretoeat@gmail.com</TextFooter>
       </Footer>
     </>
   )

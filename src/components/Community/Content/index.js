@@ -6,7 +6,7 @@ import { Footer } from '../../Footer/styled'
 import { TextFooter } from '../../Typography'
 
 const Test = styled.div`
-  width: 80vw;
+  width: 70vw;
   height: 150px;
   background-color: #a25c20;
   border-radius: 20px;
@@ -15,15 +15,15 @@ const Test = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
+
   select {
     width: 300px;
     height: 40px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     flex-direction: row;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   h1 {
     margin: 5px 20px;
@@ -37,12 +37,12 @@ const BG = styled.div`
   justify-content: space-around;
   align-items: center;
   border-radius: 20px;
-  margin: 0 1rem 1.5rem 1rem ;
+  margin: 0 1rem 1.5rem 1rem;
 `
 
 const Select = styled.select`
   border-radius: 5px;
-
+  font-size:25px;
 `
 
 function Community () {

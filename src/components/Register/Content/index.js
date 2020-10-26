@@ -5,7 +5,8 @@ import {
   FormRegister,
   InputRegister,
   ButtonRegister,
-  ContentInputAgeDate
+  ContentInputAgeDate,
+  ImageLogo
 } from './styled'
 import { TextFooter } from '../../Typography'
 import { Footer } from '../../Footer/styled'
@@ -27,7 +28,10 @@ function Content () {
   return (
     <>
       <ContainerRegister>
-        <ContentRegister />
+        <ContentRegister>
+          <ImageLogo />
+        </ContentRegister>
+
         <ContentRegister>
           <FormRegister>
             <InputRegister
@@ -72,7 +76,9 @@ function Content () {
           </FormRegister>
         </ContentRegister>
       </ContainerRegister>
-      <Footer><TextFooter>wheretoeat@gmail.com</TextFooter></Footer>
+      <Footer>
+        <TextFooter>wheretoeat@gmail.com</TextFooter>
+      </Footer>
     </>
   )
 }
